@@ -1,15 +1,7 @@
-const job = prompt("Qual é a sua profissão?");
 
-switch (job) {
-  case "Programador":
-    console.log("Você é um Programador!");
-    break;
-  case "Advogado":
-    console.log("Você é um Advogado!");
-    break;
-  case "Policial":
-    console.log("Você é um policial!");
-    break;
-    default:
-    console.log("Profissão nao encontrada")
-}
+let o = 10;
+
+do {
+  console.log(`Valor de o: ${o}`);
+  o--;
+} while (o > 1);

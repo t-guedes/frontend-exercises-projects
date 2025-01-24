@@ -1,14 +1,22 @@
-const testSlice = ["a", "b", "c", "d", "e", "f"];
-const subArray = testSlice.slice(2, 4); // aqui ele só vai retornar a 'c' e 'd', e não ao 4 item que é o 'e'
-console.log(subArray);
+const myJson = '{"name": "Tamires", "age": 23, "skills": ["PHP", "JavaScript", "Python"]}';
 
-console.log(testSlice);
+console.log(myJson);
+console.log(typeof myJson);
 
-const subArray2 = testSlice.slice(2, 4 + 1) // aqui vai retorna do 2 ao 4, pois colocamos o +1
-console.log(subArray2)
 
-const subArray3 = testSlice.slice(10, 20); //quando um intervalo de elementos que não existe retorna uma lista vazia '[]'
-console.log(subArray3);
+// 28- JSON para objeto e objeto para JSON
+const myObject = JSON.parse(myJson);
+console.log(myObject);
+console.log(myObject.name);
+console.log(typeof myObject);
 
-const subArray4 = testSlice.slice(2);
-console.log(subArray4);
+// JSON invalido
+const badJson = '{"name": "Tamires, "age": 23}';
+//const myBadObject = JSON.parse(badJson);
+
+myObject.isOpenToWork = true;
+console.log(myObject);
+
+const myNewJson = JSON.stringify(myObject)
+console.log(myJson);
+console.log(typeof myJson);
