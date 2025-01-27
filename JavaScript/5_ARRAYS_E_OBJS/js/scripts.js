@@ -337,4 +337,4 @@ console.log(myJson);
 console.log(typeof myJson);
 
 // parse = Converte uma string JSON em um objeto JavaScript.
-// stringify Converte um objeto JavaScript em uma string JSON.
+// stringify = Converte um objeto JavaScript em uma string JSON.
