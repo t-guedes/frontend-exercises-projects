@@ -1,7 +1,3 @@
-
-let o = 10;
-
-do {
-  console.log(`Valor de o: ${o}`);
-  o--;
-} while (o > 1);
+console.log(Math.max(5, 2, 1, 10));
+console.log(Math.floor(5.14));
+console.log(Math.ceil(5.14));

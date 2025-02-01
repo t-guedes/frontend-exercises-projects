@@ -1,11 +1,15 @@
-function factorial(x) {
-    if(x === 0) {
-        return 1;
-    } else {
-        return x * factorial(x - 1);
-    }
-}
+//  8- valor dafault
+const customGreeting = (name, greet = "Olá") => {
+    return `${greet}, ${name}!`;
+};
+console.log(customGreeting("Charles"));
+console.log(customGreeting("Samuel", "Bom dia"));
 
-const num = 6;
-const result = factorial(num);
-console.log(`O fatorial ${num} é ${result}`);
+const repeatText = (text, repeat = 2) => {
+    for (let i = 0; i < repeat; i++) {
+        console.log(text);
+    }
+};
+
+repeatText("Testando...");
+repeatText("Agora repete 6 vezes", 6);
