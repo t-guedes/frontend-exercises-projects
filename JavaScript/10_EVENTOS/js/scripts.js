@@ -129,10 +129,9 @@ const debounce = (f, delay) => {
 };
 
 window.addEventListener(
-  "mousemove",
-  debounce(() => {
+  "mousemove", debounce(() => {
     console.log("Executando a cada 400ms");
-  })
+  }, 400)
 );
 /*
 A função debounce recebe dois parâmetros:
