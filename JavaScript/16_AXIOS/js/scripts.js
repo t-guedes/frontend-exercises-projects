@@ -4,8 +4,17 @@ console.log(axios);
 // 2- Primeiro request
 const getData = async () => {
   try {
-    const response = await axios.get(
-      "https://jsonplaceholder.typicode.com/users"
+    // axios mudou para postsFech ⬇️
+    const response = await postsFech.get(
+      // omitimos todo começo "https://jsonplaceholder.typicode.com/users" ➡️ /users ➡️ porque estamos utilizando o custom
+      "/users",
+      // 4- Definindo headers
+      {
+        headers: {
+          "Content-Type": "application/json",
+          custom: "header",
+        },
+      }
     );
 
     console.log(response);
@@ -49,3 +58,37 @@ const printData = async () => {
 };
 
 printData();
+
+// 5- POST
+const form = document.querySelector("#post-form");
+const titleInput = document.querySelector("#title");
+const bodyInput = document.querySelector("#body");
+
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+
+//   // axios mudou para postsFech ⬇️
+//   // omitimos todo começo "https://jsonplaceholder.typicode.com/posts" ➡️ /post ➡️ porque estamos utilizando o custom
+//   postsFech.post("/posts", {
+//     title: titleInput.value,
+//     body: bodyInput.value,
+//     userId: 1,
+//   });
+// });
+
+// //   axios.post("https://jsonplaceholder.typicode.com/posts", {
+// //     body: JSON.stringify({
+// //       title: titleInput.value,
+// //       body: bodyInput.value,
+// //       userId: 1,
+// //     }),
+// //   });
+// // });
+
+// 6- global instance = criei um arquivo
+
+// 7- custom instance = criei um arquivo
+
+// 8 - interceptor = criei um arquivo
+
+
