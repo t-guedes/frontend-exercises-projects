@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mensagem</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(120deg, #dfe9f3, #ffffff);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .mensagem {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #4b0082;
+      text-align: center;
+      animation: aparecer 2s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes aparecer {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="mensagem" id="mensagem"></div>
+
+  <script>
+    const frase = "TUDO NO TEMPO DE DEUS";
+    document.getElementById("mensagem").textContent = frase;
+  </script>
+</body>
+</html>
