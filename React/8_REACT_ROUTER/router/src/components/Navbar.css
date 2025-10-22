@@ -1,0 +1,13 @@
+.active {
+    background-color: yellow;
+    color: black;
+    gap: 10px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.active:hover {
+    background-color: blue;
+}
+
+
