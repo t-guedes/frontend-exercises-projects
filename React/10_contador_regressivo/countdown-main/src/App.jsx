@@ -4,7 +4,7 @@ import { useContext } from "react";
 
 import { CountdownContext } from "./context/CountdownContext";
 
-import NewYear from "./assets/ChatGPTastronauta.png";
+import Astronauta from "./assets/ChatGPTastronauta.png";
 
 import "./App.css";
 
@@ -21,7 +21,7 @@ function App() {
       style={
         eventImage
           ? { backgroundImage: `url(${eventImage})` }
-          : { backgroundImage: `url(${NewYear})` }
+          : { backgroundImage: `url(${Astronauta})` }
       }
     >
       <div className="container">
