@@ -4,7 +4,7 @@ import { useContext } from "react";
 
 import { CountdownContext } from "./context/CountdownContext";
 
-import NewYear from "./assets/newyear.jpg";
+import NewYear from "./assets/ChatGPTastronauta.png";
 
 import "./App.css";
 
