@@ -30,8 +30,4 @@ let inf = "Teste"; // Inference
 console.log(inf);
 // ann = 1
 // inf = 1
-
 //# sourceMappingURL=index.js.map
-
-console.log("Hello World");
-console.log("Olá Mundo");
